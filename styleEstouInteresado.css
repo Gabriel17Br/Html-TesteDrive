@@ -1,0 +1,243 @@
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Define que padding e border não aumentam a largura/altura do elemento */
+}
+
+body {
+  font-family: Arial, sans-serif; /* Define a fonte padrão para o corpo da página */
+}
+#conteiner{
+ display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 150vh;
+  
+  padding: 5px;
+  margin: auto;
+  box-sizing: border-box;
+}
+/* NAVBAR (BARRA SUPERIOR)*/
+.navbar {
+  display: flex; /* Organiza os itens em linha */
+  justify-content: space-between; /* Espaça os elementos nas extremidades */
+  align-items: center; /* Centraliza verticalmente */
+  padding: 12px 24px; /* Espaçamento interno */
+  background-color: white; /* Cor de fundo branca */
+  border-bottom: 2px solid #c00; /* Linha vermelha abaixo da navbar */
+  position: sticky; /* Fixa no topo ao rolar */
+  top: 0; /* Gruda no topo */
+  z-index: 1000; /* Fica acima de outros elementos */
+  position: relative; /* Necessário para centralizar a logo */
+}
+
+/* LOGO HONDA CENTRALIZADA*/
+.logo {
+  position: absolute; /* Tira do fluxo normal */
+  left: 50%; /* Move o elemento para o centro */
+  transform: translateX(-50%); /* Centraliza com base na própria largura */
+}
+
+.logo img {
+  height: 30px; /* Altura da imagem da logo */
+}
+
+/*LADO ESQUERDO DA NAVBAR */
+.menu-left {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Espaço entre os elementos */
+}
+
+.menu-icon {
+  font-size: 24px; /* Tamanho do ícone (≡) */
+  cursor: pointer; /* Muda o cursor ao passar o mouse */
+}
+
+.menu-text {
+  font-weight: bold; /* Texto em negrito */
+  font-size: 16px; /* Tamanho da fonte */
+}
+
+.arrow {
+  font-size: 12px; /* Tamanho da setinha "▼" */
+}
+
+/*LADO DIREITO DA NAVBAR*/
+.menu-right {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* Espaço entre os links/botões */
+}
+
+/* LINKS E BOTÕES */
+.btn-link {
+  text-decoration: none; /* Remove sublinhado */
+  color: #c00; /* Vermelho */
+  font-weight: bold;
+}
+
+.btn-interest {
+  background-color: #c00; /* Fundo vermelho */
+  color: white; /* Texto branco */
+  padding: 8px 12px; /* Espaçamento interno */
+  border-radius: 4px; /* Bordas arredondadas */
+  text-decoration: none; /* Sem sublinhado */
+  font-weight: bold;
+}
+
+/* BANNER DA MOTO*/
+.banner img {
+  width: 100%; /* Imagem ocupa toda a largura */
+  height: auto; /* Mantém proporção */
+  display: block; /* Remove espaço embaixo da imagem */
+}
+
+.lateral {
+  border: 1px solid;
+  width: 450px;
+  height: 475px;
+  margin-bottom: 10px;
+}
+
+.lateral img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  gap: 10px;
+}
+
+.central {
+  margin-bottom: 10px;
+  border: red;
+  display: flex;
+  flex: 1;
+  margin-bottom: 1px;
+  height: 150px;
+}
+.centro {
+  border: 1px solid ;
+  flex: 1;
+  height: 150px;    
+  margin-bottom: 10px;
+}
+.form-container {
+  background-color: #aebcff; /* mesma cor azul do exemplo */
+  padding: 20px;
+  width: 800px; /* você pode ajustar */
+  border: 1px solid;
+}
+
+form {
+  display: flex;
+  flex-direction: column; /* deixa os elementos um abaixo do outro */
+  gap: 10px; /* espaço entre os campos */
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+input {
+  padding: 6px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+<style>
+  footer {
+    background-color: #f3f3f3;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+
+  .logo {
+    font-size: 24px;
+    color: red;
+    font-weight: bold;
+  }
+
+  .social {
+    margin: 15px 0;
+  }
+
+  .social a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .coluna {
+    text-align: left;
+  }
+
+  .coluna h3 {
+    color: red;
+    font-size: 16px;
+  }
+
+  .coluna a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    margin: 4px 0;
+  }
+
+  .coluna a:hover {
+    text-decoration: underline;
+  }
+
+  .bottom {
+    margin-top: 30px;
+    font-size: 13px;
+    color: gray;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+  }
+  /* From Uiverse.io by cssbuttons-io */ 
+button {
+  align-items: center;
+  background-image: linear-gradient(144deg, #ff0000, hsl(0, 88%, 61%) 50%, #eb0000);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(255, 0, 0, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:active,
+button:hover {
+  outline: 0;
+}
+
+
+
+</style>
